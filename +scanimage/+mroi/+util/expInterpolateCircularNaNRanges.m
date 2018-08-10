@@ -49,7 +49,7 @@ end
 
 %--------------------------------------------------------------------------%
 % expInterpolateCircularNaNRanges.m                                        %
-% Copyright © 2018 Vidrio Technologies, LLC                                %
+% Copyright Â© 2018 Vidrio Technologies, LLC                                %
 %                                                                          %
 % ScanImage is licensed under the Apache License, Version 2.0              %
 % (the "License"); you may not use any files contained within the          %

@@ -167,7 +167,7 @@ end
 
 %--------------------------------------------------------------------------%
 % generateAPIDocs2.m                                                        %
-% Copyright © 2016 Vidrio Technologies, LLC                                %
+% Copyright Â© 2016 Vidrio Technologies, LLC                                %
 %                                                                          %
 % ScanImage 2015 is premium software to be used under the purchased terms  %
 % Code may be modified, but not redistributed without the permission       %
@@ -177,7 +177,7 @@ end
 
 %--------------------------------------------------------------------------%
 % generateAPIDocs2.m                                                       %
-% Copyright © 2018 Vidrio Technologies, LLC                                %
+% Copyright Â© 2018 Vidrio Technologies, LLC                                %
 %                                                                          %
 % ScanImage is licensed under the Apache License, Version 2.0              %
 % (the "License"); you may not use any files contained within the          %
