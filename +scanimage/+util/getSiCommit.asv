@@ -1,0 +1,32 @@
+get
+%% embed commit number
+    cmmthHsh = '';
+    if exist(fullfile(rootDir,'.git','HEAD'), 'file')
+        disp('Embedding commit number...');
+        fil = fopen(fullfile(rootDir,'.git','HEAD'));
+        try
+            str = fgetl(fil);
+            fclose(fil);
+        catch ME
+            fclose(fil);
+        end
+
+        cmtf = fullfile(rootDir,'.git',str(6:end));
+
+        if exist(cmtf, 'file')
+            %read commit hash
+            fid = fopen(cmtf);
+            cmmthHsh = fgetl(fid);
+            fclose(fid);
+            
+            copyfile(cmtf,fullfile(dstDir,'+scanimage','private'))
+            [~,nm,~] = fileparts(cmtf);
+            movefile(fullfile(dstDir,'+scanimage','private',nm),fullfile(dstDir,'+scanimage','private','REF'));
+        elseif strcmp(questdlg('Git commit number not found! Make sure your repo is in a valid state. Continue anyway (Release will lack information of git commit number)?','ScanImage Release Script','Continue','Cancel','Cancel'),'Continue')
+            fid = fopen(fullfile(dstDir,'+scanimage','private','REF'),'w+t');
+            fprintf(fid,'0000000');
+            fclose(fid);
+        else
+            return
+        end
+    end
