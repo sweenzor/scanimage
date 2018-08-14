@@ -3,8 +3,23 @@
 
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
-*.m text
+*.m             text
+*.mu            text
 
 # Denote all files that are truly binary and should not be modified.
-*.png binary
-*.jpg binary
+*.png           binary
+*.jpg           binary
+*.bmp           binary
+*.p             binary
+*.mex*          binary
+*.fig           binary
+*.mat           binary
+*.mdl           binary
+*.slx           binary
+*.mdlp          binary
+*.slxp          binary
+*.sldd          binary
+*.mltbx         binary
+*.mlappinstall  binary
+*.mlpkginstall  binary
+*.mn            binary
